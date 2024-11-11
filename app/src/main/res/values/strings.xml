@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Academic Consultation</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="major_options">
+        <item>Informatics</item>
+        <item>Information System</item>
+    </string-array>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="logout_message">Logout!</string>
+
+    <string name="session_choosing">Select Session</string>
+    <array name="session_options">
+        <item>08:00 - 10:00</item>
+        <item>10:00 - 12:00</item>
+        <item>12:00 - 14:00</item>
+        <item>14:00 - 16:00</item>
+        <item>18:00 - 20:00</item>
+    </array>
+</resources>

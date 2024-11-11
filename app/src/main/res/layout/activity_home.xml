@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Welcome Text -->
+    <LinearLayout
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/header"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="12mm"
+            android:layout_gravity="center"
+            android:src="@drawable/president_university" />
+
+        <TextView
+            android:id="@+id/welcomeTextUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- ScrollView for Table -->
+    <ScrollView
+        android:id="@+id/scrollViewTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottomBtn"
+        android:layout_below="@id/welcomeText"
+        android:layout_weight="1"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/consultationTableUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TableRow
+                android:id="@+id/headerRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFE3BB"
+                android:gravity="center_vertical">
+
+
+                <!-- Date -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Date"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <!-- Date -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Session"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <!-- Details -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Details"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- TableLayout for Data Rows -->
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonConsultation"
+                android:layout_below="@id/headerRow">
+
+                <!-- Data Rows will be dynamically added here -->
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/listConsultationAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="See All"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Consultation Button -->
+    <LinearLayout
+        android:id="@+id/bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/buttonConsultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Consultation" />
+    </LinearLayout>
+
+</RelativeLayout>
