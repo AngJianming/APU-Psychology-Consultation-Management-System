@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".RegisterActivity">
+
+        <!--    image-->
+        <ImageView
+            android:id="@+id/presuniv_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/president_university" />
+
+        <!--    Text-->
+        <TextView
+            android:id="@+id/welcomeTextRegister1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcomeTextRegister2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:text="President University Academic Consultation"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcomeRegister3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Where Tomorrow's Leaders Come Together"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+
+        <!--    Name-->
+        <EditText
+            android:id="@+id/editTextNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:hint="Full Name"
+            android:inputType="text" />
+
+        <!--    education-->
+        <EditText
+            android:id="@+id/editTextBatchRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Batch"
+            android:inputType="text" />
+
+        <!--    Email-->
+        <EditText
+            android:id="@+id/editTextEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!--    Password-->
+        <EditText
+            android:id="@+id/editTextPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/gender_options"
+            android:hint="Select Gender"
+            android:spinnerMode="dropdown" />
+
+        <!--Register-->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FA7070"
+            android:text="Register"
+            android:textSize="18dp" />
+
+        <!--Login-->
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="If you have an account, then login"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83A2FF"
+            android:text="Login"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</ScrollView>
