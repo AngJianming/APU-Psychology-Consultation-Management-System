@@ -1,4 +1,4 @@
-package com.example.psychologyconsultationfinalproject;
+package apu.psychology.consultation.management.system;
 
 import androidx.appcompat.app.AppCompatActivity;
 
